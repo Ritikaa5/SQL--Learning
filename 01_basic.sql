@@ -17,11 +17,19 @@ VALUES(2,"Aman",22);
 INSERT INTO student(id,name,age)
 VALUES(3,"Priya",20);
 
+-- select query
+
 -- Display all students
 SELECT* FROM students;
 
 -- Select specific coloumn
 SELECT name, age
 FROM students;
+
+
+-- WHERE 
+-- seclect student whose age > 20
+SELECT * FROM students
+WHERE age > 20;
 
 
