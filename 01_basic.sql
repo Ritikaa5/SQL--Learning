@@ -16,3 +16,6 @@ VALUES(2,"Aman",22);
 
 INSERT INTO student(id,name,age)
 VALUES(3,"Priya",20);
+
+-- Display all students
+SELECT* FROM students;
