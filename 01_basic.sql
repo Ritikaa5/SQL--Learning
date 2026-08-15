@@ -19,3 +19,9 @@ VALUES(3,"Priya",20);
 
 -- Display all students
 SELECT* FROM students;
+
+-- Select specific coloumn
+SELECT name, age
+FROM students;
+
+
