@@ -42,3 +42,9 @@ ORDER BY age;
 -- sort student by age in desc order
 SELECT * FROM students
 ORDER BY age DESC;
+
+-- LIMIT
+-- Display only first 2 students
+SELECT*FROM students
+LIMIT 2;
+
