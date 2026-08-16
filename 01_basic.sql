@@ -54,3 +54,9 @@ LIMIT 2;
 SELECT DISTINCT age
 FROM students;
 
+--AND
+-- select studnets whoes age is greater than 
+-- 20 and id is less than 3
+SELECT* FROM students
+WHERE age > 20 AND id < 3;
+
