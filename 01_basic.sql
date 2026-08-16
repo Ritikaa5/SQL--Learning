@@ -48,3 +48,9 @@ ORDER BY age DESC;
 SELECT*FROM students
 LIMIT 2;
 
+
+-- DISTINCT
+-- Display unique ages
+SELECT DISTINCT age
+FROM students;
+
