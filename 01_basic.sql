@@ -81,3 +81,8 @@ WHERE age IN(20,22);
 -- select students whose age is between 20 and 22
 SELECT * FROM students
 WHERE age BETWEEN 20 AND 22;
+
+--LIKE
+-- find students whoese name start with 'R'
+SELECT* FROM students
+WHERE name LIKE 'R%';
