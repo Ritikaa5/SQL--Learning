@@ -35,5 +35,10 @@ WHERE age > 20;
 
 -- order by
 -- select stduents by age
+-- asc -> desc
 SELECT * FROM students
 ORDER BY age;
+
+-- sort student by age in desc order
+SELECT * FROM students
+ORDER BY age DESC;
