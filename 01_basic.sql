@@ -60,3 +60,9 @@ FROM students;
 SELECT* FROM students
 WHERE age > 20 AND id < 3;
 
+
+-- OR 
+-- select students whoes age sis 20 or 22
+SELECT * FROM students
+WHERE age = 20 OR age = 22;
+
