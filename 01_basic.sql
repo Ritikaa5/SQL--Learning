@@ -76,3 +76,8 @@ WHERE NOT age = 22;
 -- select students whoes age is 20 or 22
 SELECT * FROM students
 WHERE age IN(20,22);
+
+-- BETWEEN
+-- select students whose age is between 20 and 22
+SELECT * FROM students
+WHERE age BETWEEN 20 AND 22;
