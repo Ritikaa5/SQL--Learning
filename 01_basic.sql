@@ -66,3 +66,8 @@ WHERE age > 20 AND id < 3;
 SELECT * FROM students
 WHERE age = 20 OR age = 22;
 
+
+-- NOT
+-- select age whoes not 22
+SELECT* FROM students
+WHERE NOT age = 22;
