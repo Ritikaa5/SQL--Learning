@@ -112,7 +112,13 @@ stu_age
 FROM riki;
 
 
+--UPDATE
 -- where is very important
 UPDATE students
 SET age = 21;
+
+--DELETE
+--delete a student
+DELETE FROM students
+WHERE id = 3;
 
