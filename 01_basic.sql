@@ -135,4 +135,9 @@ SELECT SUM(age) AS total_age
 FROM students;
 
 
+--AVG()
+-- Calculate avg age
+SELECT AVG(age) AS avg_age
+FROM students;
+
 
