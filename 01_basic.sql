@@ -141,3 +141,11 @@ SELECT AVG(age) AS avg_age
 FROM students;
 
 
+-- MIN() and MAX()
+-- Find minimum and maximum age
+SELECT 
+MIN(age) AS minimum_age,
+MAX(age) AS maximum_age
+FROM students;
+
+
