@@ -112,3 +112,7 @@ stu_age
 FROM riki;
 
 
+-- where is very important
+UPDATE students
+SET age = 21;
+
