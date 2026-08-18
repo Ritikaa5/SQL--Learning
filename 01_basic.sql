@@ -122,3 +122,11 @@ SET age = 21;
 DELETE FROM students
 WHERE id = 3;
 
+
+-- Aggregate Function
+-- COUNT():
+-- count total students
+SELECT COUNT(*) AS total_stu
+FROM students;
+
+
