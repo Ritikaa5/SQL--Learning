@@ -86,3 +86,22 @@ WHERE age BETWEEN 20 AND 22;
 -- find students whoese name start with 'R'
 SELECT* FROM students
 WHERE name LIKE 'R%';
+
+-- isNULL / is NOT NULL
+
+--UPDATE
+-- set age of student with id 3 to NULL
+UPDATE students
+SET age = NULL
+WHERE id = 3;
+
+
+-- isNULL
+SELECT* FROM students
+WHERE age is NULL;
+
+--is NOT NULL
+-- find students whose age is not NULL
+SELECT* FROM students
+WHERE age IS NOT NULL;
+
