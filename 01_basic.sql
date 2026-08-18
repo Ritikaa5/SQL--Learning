@@ -129,4 +129,10 @@ WHERE id = 3;
 SELECT COUNT(*) AS total_stu
 FROM students;
 
+-- SUM()
+-- Calculate total age
+SELECT SUM(age) AS total_age
+FROM students;
+
+
 
