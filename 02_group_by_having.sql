@@ -10,3 +10,4 @@ SELECT age, COUNT(*) AS total_stud
 FROM students
 GROUP BY age
 HAVING COUNT(*)>1;
+

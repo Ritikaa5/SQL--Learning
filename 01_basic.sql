@@ -109,7 +109,7 @@ WHERE age IS NOT NULL;
 -- Rename column in the column
 SELECT name AS stu_name, age AS
 stu_age
-FROM riki;
+FROM students;
 
 
 --UPDATE
