@@ -10,3 +10,24 @@ VALUES
 (101,'SQL',1),
 (102,'JAVA',2),
 (103,'Python',4);
+
+
+-- create student table
+CREATE TABLE students(
+    student_id INT,
+    student_name VARCHAR(50),
+    age INT
+);
+
+
+INSERT INTO students(student_id,student_name,age)
+VALUES
+(1,'Ritika',21),
+(2,'Aman',22),
+(2,'Priya',20);
+
+SELECT students.student_name,
+course.course_name
+FROM students
+INNER JOIN course
+ON student.student_id = course.student_id;
