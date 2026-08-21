@@ -40,3 +40,11 @@ SELECT students.student_name, coruse.course_name
 FROM students
 LEFT JOIN courses
 ON students.student_id = courses.student_id;
+
+
+-- RIGHT JOIN
+-- Show all courses and their students
+SELECT students.student_name, courses.course_name
+FROM students
+RIGHT JOIN courses
+ON students.student_id = courses.student_id;
