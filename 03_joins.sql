@@ -48,3 +48,10 @@ SELECT students.student_name, courses.course_name
 FROM students
 RIGHT JOIN courses
 ON students.student_id = courses.student_id;
+
+
+-- CROSS JOIN
+-- Combine every student with every course
+SELECT  students.student_name, courses.course_name
+FROM students
+CROSS JOIN courses;
