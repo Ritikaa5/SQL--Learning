@@ -26,8 +26,17 @@ VALUES
 (2,'Aman',22),
 (2,'Priya',20);
 
+-- INNER JOINS
 SELECT students.student_name,
 course.course_name
 FROM students
 INNER JOIN course
 ON student.student_id = course.student_id;
+
+
+-- LEFT JOIN
+--  Show all the students and thei courses
+SELECT students.student_name, coruse.course_name
+FROM students
+LEFT JOIN courses
+ON students.student_id = courses.student_id;
