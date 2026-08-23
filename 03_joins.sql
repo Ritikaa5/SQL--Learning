@@ -55,3 +55,24 @@ ON students.student_id = courses.student_id;
 SELECT  students.student_name, courses.course_name
 FROM students
 CROSS JOIN courses;
+
+
+-- SELF JOIN
+CREATE TABLE employees(
+    employee_id INT,
+    employee_name VARCHAR(50),
+    manager_id INT
+);
+
+INSERT INTO employees(employee_id,employee_name,manager_id)
+VALUES
+(1,'Ritika',NULL),
+(2,'Aman',1),
+(3,'Priya',1),
+(4,'Rahul',2);
+
+--show emplyoee with their managers
+SELECT employees.employee_name,managers.employee_name
+FROM employees
+JOIN employees AS managers
+ON employees.manager_id = managers.employee_id;
