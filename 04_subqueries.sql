@@ -18,3 +18,13 @@ WHERE age > (
     SELECT AVG(age)
     FROM students
 );
+
+
+-- IN + subquery
+SELECT student_name
+FROM students
+WHERE student_id INT(
+    SELECT student_id
+    FROM courses
+    WHERE course_name IN('SQL','JAVA')
+);
