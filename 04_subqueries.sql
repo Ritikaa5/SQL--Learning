@@ -28,3 +28,16 @@ WHERE student_id INT(
     FROM courses
     WHERE course_name IN('SQL','JAVA')
 );
+
+-- EXISTS
+-- find shudent who have at least one course
+SELECT student_name
+FROM students
+WHERE EXISTS(
+    SELECT 1
+    FROM courses
+    WHERE courses.student_id = students.student_id
+);
+
+
+
