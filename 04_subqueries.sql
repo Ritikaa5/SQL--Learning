@@ -40,4 +40,14 @@ WHERE EXISTS(
 );
 
 
+-- Correlated Subquery
+-- find students are the oldest student
+SELECT student_name,age
+FROM students
+WHERE EXISTS (
+    SELECT 1
+    FROM students AS other_students
+    WHERE other_students.age > students.age
+);
+
 
