@@ -51,3 +51,12 @@ WHERE EXISTS (
 );
 
 
+-- FROM subqery
+-- Find students whose age is greater than 21
+SELECT student_name, age
+FROM(
+    SELECT student_name,age
+    FROM students
+    WHERE age > 21
+) AS result;
+
