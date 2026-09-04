@@ -68,3 +68,16 @@ SELECT student_name,age,
     average_age
     FROM students;
 
+
+-- UPDATE
+-- Increase age by for studnets younger than average age
+UPDATE students
+SET age = age + 1
+WHERE age < (
+    SELECT AVG(age)
+    FROM (
+        SELECT age
+        FROM students
+    ) AS student_ages
+);
+
