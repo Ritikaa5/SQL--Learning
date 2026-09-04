@@ -81,3 +81,15 @@ WHERE age < (
     ) AS student_ages
 );
 
+
+-- DELETE
+-- Delete students younger than average age
+DELETE FROM students
+WHERE age < (
+    SELECT AVG(age)
+    FROM (
+        SELECT age
+        FROM students
+    ) AS student_ages
+);
+
