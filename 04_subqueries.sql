@@ -60,3 +60,11 @@ FROM(
     WHERE age > 21
 ) AS result;
 
+
+-- SELECT
+-- show each student with the average age
+SELECT student_name,age,
+    (SELECT AVG(age) FROM studnets) AS
+    average_age
+    FROM students;
+
