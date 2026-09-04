@@ -93,3 +93,18 @@ WHERE age < (
     ) AS student_ages
 );
 
+
+-- NESTED SUBQUERY
+-- find the student who is enrolled in the course
+-- having the highest course_id
+SELECT student_name
+FROM students
+WHERE student_id = (
+    SELECT student_id
+    FROM courses
+    WHERE course_id = (
+        SELECT MAX(course_id)
+        FROM courses
+    )
+);
+
